@@ -1,0 +1,96 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font */
+  --outfit: Outfit, "sans-serif";
+  --font-size: 0.9375rem;
+}
+
+/* override default styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--outfit);
+  font-size: var(--font-size);
+}
+
+main {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* card style */
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: hsl(216, 50%, 16%);
+  width: 20rem;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 20px;
+  text-align: start;
+}
+
+.card img {
+  order: -1;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.card .title p {
+  padding: 0 1rem;
+  font-size: 1.375rem;
+  color: var(--white);
+}
+
+.card .description p {
+  margin: 1rem 0 1.5rem 0;
+  padding: 0 1rem;
+  letter-spacing: 0.013em;
+}
+
+.nominal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nominal p {
+    display: inline-block;
+}
+.nominal .eth img {
+    vertical-align: middle; /* Menengahkan gambar di dalam elemen <p> dengan kelas eth */
+  }
+.nominal .eth{
+  color: var(--cyan);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer img {
+  width: 2rem;
+}
